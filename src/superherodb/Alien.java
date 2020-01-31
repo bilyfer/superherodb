@@ -9,35 +9,35 @@ package superherodb;
  *
  * @author billy
  */
-public class Humano extends Personaje implements Super { 
-    String idioma;
+public class Alien extends Personaje implements Super {
+    String dialecto;
 
-    public String getIdioma() {
-        return idioma;
+    public String getDialecto() {
+        return dialecto;
     }
 
-    public void setIdioma(String idioma) {
-        this.idioma = idioma;
+    public void setDialecto(String dialecto) {
+        this.dialecto = dialecto;
     }
     
-    Humano(String nombre, String idioma) {
+    Alien(String nombre, String dialecto) {
         super.setNombre(nombre);
-        this.idioma = idioma;
+        this.dialecto = dialecto;
     }
 
     @Override
     public void AgregarPoderes(String poder) {
-        System.out.println("Agregando poder a un humano " + poder);      
+        System.out.println("Agregando poder a un alien " + poder);
     }
 
     @Override
     public void AgregarDebilidades(String debilidad) {
-        System.out.println("Agregando debilidad a un humano " + debilidad);
+        System.out.println("Agregando debilidad a un alien " + debilidad);
     }
 
     @Override
     public String getQueHabla() {
-        return idioma;
+        return dialecto;
     }
-
+    
 }

@@ -11,6 +11,7 @@ package superherodb;
  */
 public interface Super {
     String getNombre();
+    String getQueHabla();
     void AgregarPoderes(String poder);
     void AgregarDebilidades(String debilidad);
 }

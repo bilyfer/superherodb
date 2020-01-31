@@ -5,6 +5,9 @@
  */
 package superherodb;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author billy
@@ -16,7 +19,17 @@ public class SuperHeroDB {
      */
     public static void main(String[] args) {
         // TODO code application logic here        
-        Humano steve = new Humano();
+        Super steve = new Humano("Steve Rogers", "Español");
+        Super thanos = new Alien("Thanos", "Titan");
+        
+        List<Super> listadeSupers = new ArrayList<>();
+        
+        listadeSupers.add(steve);
+        listadeSupers.add(thanos);
+        
+        for(Super s: listadeSupers) {
+            System.out.println(s.getNombre() + " " + s.getQueHabla());
+        }
     }
     
 }
