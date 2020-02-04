@@ -9,16 +9,11 @@ package superherodb.bl;
  *
  * @author billy
  */
-public abstract class Personaje {
-    private String nombre;
+public class Alien extends Personaje implements Super {
 
-    public String getNombre() {
-        return nombre;
+    @Override
+    public void AgregarPoder(String poder) {
+        System.out.println("Agregando poder " + poder + " al alien " + getNombre());
     }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-    
     
 }

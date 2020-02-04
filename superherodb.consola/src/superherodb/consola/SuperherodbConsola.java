@@ -5,7 +5,10 @@
  */
 package superherodb.consola;
 
+import superherodb.bl.Alien;
+import superherodb.bl.Humano;
 import superherodb.bl.Personaje;
+import superherodb.bl.Super;
 
 /**
  *
@@ -19,10 +22,12 @@ public class SuperherodbConsola {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Personaje peter = new Personaje();
-        peter.setNombre("Peter Paker");
+        Super peter = new Humano("Peter Parker");
         
-        System.out.println(peter.getNombre());
+        peter.AgregarPoder("Punzada");              
+        
+        Super loky = new Alien();
+        loky.AgregarPoder("Magia");
     }
     
 }
