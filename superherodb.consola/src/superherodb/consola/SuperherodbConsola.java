@@ -26,8 +26,7 @@ public class SuperherodbConsola {
         
         peter.AgregarPoder("Punzada");              
         
-        Super loky = new Alien();
+        Super loky = new Alien("Loky");
         loky.AgregarPoder("Magia");
-    }
-    
+    }    
 }

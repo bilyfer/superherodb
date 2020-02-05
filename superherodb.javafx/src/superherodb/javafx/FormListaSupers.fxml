@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="superherodb.javafx.FormListaSupersController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="158.0" prefHeight="232.0" prefWidth="571.0">
+         <columns>
+            <TableColumn fx:id="nombre" prefWidth="179.0" text="Nombre" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnHumano" onAction="#nuevoSuperHumano" layoutX="14.0" layoutY="80.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="208.0" text="Agregar Super Humano" />
+      <Button fx:id="btnAlien" onAction="#nuevoSuperAlien" layoutX="14.0" layoutY="121.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="208.0" text="Agregar Super Alien" />
+      <TextField fx:id="nombreTextField" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="208.0" />
+   </children>
+</AnchorPane>

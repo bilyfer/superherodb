@@ -17,7 +17,7 @@ public class Humano extends Personaje implements Super {
     }
 
     public Humano(String nombre) {
-        this.setNombre(nombre);
+        super(nombre);
     }
     
 }

@@ -19,6 +19,10 @@ public abstract class Personaje {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    public Personaje(String nombre) {
+        this.nombre = nombre;
+    }
     
     
 }

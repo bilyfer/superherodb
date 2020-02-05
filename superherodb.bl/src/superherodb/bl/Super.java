@@ -10,5 +10,6 @@ package superherodb.bl;
  * @author billy
  */
 public interface Super {
+    String getNombre();
     void AgregarPoder(String poder);
 }

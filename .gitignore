@@ -26,3 +26,6 @@ hs_err_pid*
 /superherodb.bl/dist/
 /superherodb.consola/build/
 /superherodb.consola/dist/
+/superherodb.javafx/nbproject/private/
+/superherodb.javafx/dist/
+/superherodb.javafx/build/

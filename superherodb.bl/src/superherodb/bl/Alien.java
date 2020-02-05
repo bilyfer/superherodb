@@ -11,6 +11,10 @@ package superherodb.bl;
  */
 public class Alien extends Personaje implements Super {
 
+    public Alien(String nombre) {
+        super(nombre);
+    }
+    
     @Override
     public void AgregarPoder(String poder) {
         System.out.println("Agregando poder " + poder + " al alien " + getNombre());
