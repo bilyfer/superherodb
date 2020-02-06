@@ -9,6 +9,7 @@ import superherodb.bl.Alien;
 import superherodb.bl.Humano;
 import superherodb.bl.Personaje;
 import superherodb.bl.Super;
+import superherodb.bl.SuperServicio;
 
 /**
  *
@@ -22,11 +23,10 @@ public class SuperherodbConsola {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Super peter = new Humano("Peter Parker");
+        SuperServicio servicio = new SuperServicio();
         
-        peter.AgregarPoder("Punzada");              
-        
-        Super loky = new Alien("Loky");
-        loky.AgregarPoder("Magia");
+        for(Super s: servicio.ObtenerSupers()) {
+            System.out.println(s.getNombre());
+        } 
     }    
 }

@@ -18,6 +18,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import superherodb.bl.Alien;
 import superherodb.bl.Humano;
 import superherodb.bl.Super;
+import superherodb.bl.SuperServicio;
 
 /**
  * FXML Controller class
@@ -36,9 +37,10 @@ public class FormListaSupersController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        data = FXCollections.observableArrayList();
-        data.add(new Humano("Peter"));
+        SuperServicio servicio = new SuperServicio();
         
+        data = FXCollections.observableArrayList(servicio.ObtenerSupers());
+
         nombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
 
         tableView.setItems(data);           

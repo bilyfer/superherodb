@@ -10,6 +10,7 @@ import javax.swing.table.DefaultTableModel;
 import superherodb.bl.Alien;
 import superherodb.bl.Humano;
 import superherodb.bl.Super;
+import superherodb.bl.SuperServicio;
 
 /**
  *
@@ -114,14 +115,12 @@ public class ListadeSupers extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void CargarDatos() {
-        ArrayList<Super> listaSupers = new ArrayList<>();
-        listaSupers.add(new Humano("Peter"));
-        listaSupers.add(new Alien("Thanos"));
+        SuperServicio servicio = new SuperServicio();
         
         String cols[] = new String[]{"Nombre"};
         DefaultTableModel tableModel = new DefaultTableModel(cols, 0);
         
-        for(Super s: listaSupers) 
+        for(Super s: servicio.ObtenerSupers()) 
         {
             Object[] obj = new Object[1];
             obj[0] = s.getNombre();
